@@ -1,0 +1,192 @@
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header{
+    position: relative;
+    
+    
+}
+
+.header::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom,rgba(6,18,30,0.1),#06121e),url("../imagens/motor.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    opacity: .2;
+}
+
+@media(max-width: 768px){
+    .header-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+    
+    
+}
+
+.hero{
+    padding: 30px 0;
+}
+
+.sobre-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    gap: 15px;
+
+}
+.sobre-content div{
+    flex: 1;
+}
+.sobre-img{
+    width: 350px;
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+.sobre-img img{
+    opacity: .5;
+    z-index: -1;
+ 
+}
+.sobre-text{
+    color: $white_normal;
+    text-align: center;
+    line-height: 150%;
+    font-size: 2rem;
+}
+
+@media(max-width:768px){
+   .sobre-content{
+    flex-direction: column;
+   } 
+   .sobre-text{
+    font-size: 1rem;
+   }
+}
+.service{
+    background-color: $white_normal;
+    color: $black_normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 14px;
+    width: 100%;
+}
+
+.service-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 20px;
+    h2{
+        text-transform: uppercase;
+        padding: 5px;
+        font-weight: 700;
+    }
+    p{
+        text-align: center;
+        line-height: 150%;
+    }
+}
+
+.manutencoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.manutencao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+    
+    box-shadow: 0px -1px 17px -4px rgba(0,0,0,0.45);
+    img{
+        width: 100%;
+        height: 300px;
+    }
+    div{
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 15px 10px;
+    }
+}
+
+@media(max-width:768px){
+    .manutencoes{
+        display: flex;
+        flex-direction: column;
+    }
+    .manutencao div{
+        width: 100%;    
+    }
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.icons{
+    padding-top: 15px;
+    gap: 10px;
+}
+.footer-logo{
+    img{
+        border-radius: 30px;
+        opacity: .7;
+        width: 100%;
+        height: 150px;
+    }
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        color: $white_normal;
+        padding-bottom: 15px;
+    }
+}
+.footer-text{
+    text-align: center;
+    line-height: 150%;
+    color: $white_dark;
+    padding: 15px 0;
+}
+
+.whatssapp{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    background-color: green;
+    border-radius: 5px;
+    i{  
+        padding: 5px;
+        color: $white_dark;
+        font-size: 3rem;
+    }
+}

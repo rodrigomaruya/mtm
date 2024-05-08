@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Sura:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+i {
+  color: #fff;
+  font-size: 30px;
+}
+
+.header-logo {
+  margin: 20px 0;
+}
+.header-logo img {
+  border-radius: 30px;
+  opacity: 0.7;
+  width: 100%;
+}
+.header-logo h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.header-button {
+  background-color: #d94140;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.header-button a {
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #edeaef;
+}
+.hero h2 {
+  max-width: 700px;
+  text-align: center;
+  line-height: 130%;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .header-logo h1 {
+    font-size: 1.5rem;
+  }
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../imagens/motor.jpg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+}
+.hero {
+  padding: 30px 0;
+}
+
+.sobre-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+  gap: 15px;
+}
+
+.sobre-content div {
+  flex: 1;
+}
+
+.sobre-img {
+  width: 350px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.sobre-img img {
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.sobre-text {
+  color: #fff;
+  text-align: center;
+  line-height: 150%;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .sobre-content {
+    flex-direction: column;
+  }
+  .sobre-text {
+    font-size: 1rem;
+  }
+}
+.service {
+  background-color: #fff;
+  color: #232224;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 14px;
+  width: 100%;
+}
+
+.service-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 20px;
+}
+.service-content h2 {
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: 700;
+}
+.service-content p {
+  text-align: center;
+  line-height: 150%;
+}
+
+.manutencoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.manutencao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+}
+.manutencao img {
+  width: 100%;
+  height: 300px;
+}
+.manutencao div {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 10px;
+}
+
+@media (max-width: 768px) {
+  .manutencoes {
+    display: flex;
+    flex-direction: column;
+  }
+  .manutencao div {
+    width: 100%;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icons {
+  padding-top: 15px;
+  gap: 10px;
+}
+
+.footer-logo img {
+  border-radius: 30px;
+  opacity: 0.7;
+  width: 100%;
+  height: 150px;
+}
+.footer-logo h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+.footer-text {
+  text-align: center;
+  line-height: 150%;
+  color: #edeaef;
+  padding: 15px 0;
+}
+
+.whatssapp {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  background-color: green;
+  border-radius: 5px;
+}
+.whatssapp i {
+  padding: 5px;
+  color: #edeaef;
+  font-size: 3rem;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+  background-color: #06121E;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
